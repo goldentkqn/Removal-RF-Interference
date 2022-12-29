@@ -1,0 +1,14 @@
+Dear user,
+
+Note: data should be converted to file.csv
+
+- In the Denoising_using_wavelet_base_method(), it has two parameter need to carefully are j and n. Because in mass spectra using a frequency-scan there will be a lot of sinusoidal interference from ions trap come to detector, therefore to use j and n, user need to know exactly the existence of noise components in spectra.
+
+- In the top_hat_baseline(), w is width of peak and it's depend on your data mean high mass or low mass. If your data is low mass but use w to large it make your plot not change anything. But vice versa, your spectra will be distorted.
+
+- The runtime algorithm depend on CPU's computer and length of data.
+
+Thank you!
+
+Best regards,
+Đặng Công Minh (Harley).
